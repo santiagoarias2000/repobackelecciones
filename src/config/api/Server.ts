@@ -20,7 +20,7 @@ class Server {
     }
 
     public startSetting(): void{
-        this.app.set("PORT", 3123);
+        this.app.set("PORT", 443);
         this.app.use(cors());
         this.app.use(morgan("dev"));
         this.app.use(express.json({limit:"100mb"}));
